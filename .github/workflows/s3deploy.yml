@@ -19,6 +19,6 @@ jobs:
       - name: Build React App
         run: npm install && npm run build
         env:
-          REACT_APP_ENV_TEST: ${{ secrets.REACT_APP_ENV_TEST }}
+          REACT_APP_REPO_VAR: ${{ secrets.REACT_APP_REPO_VAR }}
       - name: Deploy app build to S3 bucket
         run: aws s3 sync ./build/ s3://jsburn-notes-app --delete

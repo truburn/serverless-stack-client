@@ -34,7 +34,7 @@ Amplify.configure({
 console.log({
   process,
   env: process.env,
-  testVar: process.env.REACT_APP_ENV_TEST,
+  testVar: process.env.REACT_APP_REPO_VAR,
 });
 
 ReactDOM.render(
