@@ -78,6 +78,12 @@ const Home = () => {
         <p className="text-muted">
           A simple note taking app
         </p>
+        <p className="text-muted">
+          {`REACT_APP_REPO_VAR: ${process.env.REACT_APP_REPO_VAR}`}
+        </p>
+        <p className="text-muted">
+          {`ENV_VAR: ${process.env.ENV_VAR}`}
+        </p>
       </div>
     );
   };
