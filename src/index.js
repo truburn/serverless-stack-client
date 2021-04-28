@@ -34,7 +34,7 @@ Amplify.configure({
 console.log({
   process,
   env: process.env,
-  testVar: process.env.REACT_APP_REPO_VAR,
+  testVar: process.env.REACT_APP_REPO_VAR || 'hello pluto',
 });
 
 ReactDOM.render(
