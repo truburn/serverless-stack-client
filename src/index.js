@@ -31,6 +31,12 @@ Amplify.configure({
   },
 });
 
+console.log({
+  process,
+  env: process.env,
+  testVar: process.env.REACT_APP_ENV_TEST,
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
